@@ -8,4 +8,4 @@ let movieSchema = new mongoose.Schema({
     genero: {type:String},
 });
 
-module.exports = mongoose.model('Movie',movieSchema,'movie');
+module.exports = mongoose.model('Movie', movieSchema, 'movie');

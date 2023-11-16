@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const userController = require('../controllers/movies.controllers');
+const usersController = require('../controllers/users.controllers');
 
-router.post('/', userController.registerUser);
-router.get('/', userController.getUsers);
-router.post('/login', userController.loginUser);
+router.post('/', usersController.registerUser);
+router.get('/', usersController.getUsers);
+router.post('/login', usersController.loginUser);
 
 module.exports = router;
